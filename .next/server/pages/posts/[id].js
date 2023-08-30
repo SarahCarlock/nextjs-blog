@@ -84,6 +84,38 @@ __webpack_async_result__();
 
 /***/ }),
 
+/***/ 6290:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  Z: () => (/* binding */ date_Date)
+});
+
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(5893);
+;// CONCATENATED MODULE: external "date-fns/parseISO"
+const parseISO_namespaceObject = require("date-fns/parseISO");
+var parseISO_default = /*#__PURE__*/__webpack_require__.n(parseISO_namespaceObject);
+;// CONCATENATED MODULE: external "date-fns/format"
+const format_namespaceObject = require("date-fns/format");
+var format_default = /*#__PURE__*/__webpack_require__.n(format_namespaceObject);
+;// CONCATENATED MODULE: ./components/date.js
+
+
+
+function date_Date({ dateString }) {
+    const date = parseISO_default()(dateString);
+    return /*#__PURE__*/ jsx_runtime.jsx("time", {
+        dateTime: dateString,
+        children: format_default()(date, "LLLL d, yyyy")
+    });
+}
+
+
+/***/ }),
+
 /***/ 721:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
@@ -99,7 +131,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_posts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2479);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(968);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_date__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6772);
+/* harmony import */ var _components_date__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6290);
 /* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7530);
 /* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5__);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_lib_posts__WEBPACK_IMPORTED_MODULE_2__]);
@@ -161,17 +193,10 @@ __webpack_async_result__();
 
 /***/ }),
 
-/***/ 4384:
+/***/ 8076:
 /***/ ((module) => {
 
-module.exports = require("date-fns/format");
-
-/***/ }),
-
-/***/ 1369:
-/***/ ((module) => {
-
-module.exports = require("date-fns/parseISO");
+module.exports = require("gray-matter");
 
 /***/ }),
 
@@ -406,7 +431,7 @@ module.exports = require("path");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [940,815,636,61,396], () => (__webpack_exec__(6201)));
+var __webpack_exports__ = __webpack_require__.X(0, [940,815,636,61,64], () => (__webpack_exec__(6201)));
 module.exports = __webpack_exports__;
 
 })();

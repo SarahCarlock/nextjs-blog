@@ -97,15 +97,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(968);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8769);
-/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(7530);
-/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7530);
+/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _lib_posts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2479);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1664);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_date__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6772);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_lib_posts__WEBPACK_IMPORTED_MODULE_3__]);
 _lib_posts__WEBPACK_IMPORTED_MODULE_3__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
-
 
 
 
@@ -122,7 +120,7 @@ function Home({ allPostsData }) {
                 })
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
-                className: (_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6___default().headingMd),
+                className: (_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5___default().headingMd),
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                         children: "[Your Self Introduction]"
@@ -136,16 +134,16 @@ function Home({ allPostsData }) {
                 ]
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
-                className: `${(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6___default().headingMd)} ${(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6___default().padding1px)}`,
+                className: `${(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5___default().headingMd)} ${(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5___default().padding1px)}`,
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-                        className: (_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6___default().headingLg),
+                        className: (_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5___default().headingLg),
                         children: "Blog"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
-                        className: (_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6___default().list),
+                        className: (_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5___default().list),
                         children: allPostsData.map(({ id, date, title })=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-                                className: (_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6___default().listItem),
+                                className: (_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5___default().listItem),
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_4___default()), {
                                         href: `/posts/${id}`,
@@ -155,8 +153,8 @@ function Home({ allPostsData }) {
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("small", {
-                                        className: (_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6___default().lightText),
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_date__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {
+                                        className: (_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5___default().lightText),
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Date, {
                                             dateString: date
                                         })
                                     })
@@ -182,17 +180,10 @@ __webpack_async_result__();
 
 /***/ }),
 
-/***/ 4384:
+/***/ 8076:
 /***/ ((module) => {
 
-module.exports = require("date-fns/format");
-
-/***/ }),
-
-/***/ 1369:
-/***/ ((module) => {
-
-module.exports = require("date-fns/parseISO");
+module.exports = require("gray-matter");
 
 /***/ }),
 
@@ -427,7 +418,7 @@ module.exports = require("path");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [940,815,636,61,396], () => (__webpack_exec__(6030)));
+var __webpack_exports__ = __webpack_require__.X(0, [940,815,636,61,64], () => (__webpack_exec__(6030)));
 module.exports = __webpack_exports__;
 
 })();
