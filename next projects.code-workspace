@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../../reddit-noodle-doodle"
+		},
+		{
+			"path": "../vercel-main"
 		}
 	],
 	"settings": {}
